@@ -1,3 +1,6 @@
+# Lsp library files
+*.clangd
+
 # Prerequisites
 *.d
 
