@@ -28,7 +28,7 @@ build:
 	@printf '\n\n\n%b	\033[32mBuild complete!\033[0m\n\n\n'
 
 upload:
-	arduino-cli upload -p $(PORT) --fqbn $(FQBN) $(SKETCH)
+	arduino-cli upload -p $(PORT) --fqbn $(FQBN) --build-path $(BUILD_DIR) $(SKETCH)
 	@printf '\n\n\n%b	\033[32mUpload complete!\033[0m\n\n\n'
 
 debug-build:
